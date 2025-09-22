@@ -5,11 +5,15 @@ using namespace std;
 long long Merge(vector<int> &nums, int left, int mid, int right)
 {
     long long reversePairAmount = 0;
+
     if (left >= right)
         return 0;
+
     int pointerLeft = left;
     int pointerRight = mid + 1;
+
     vector<int> tempVector;
+
     while (tempVector.size() < right - left + 1)
     {
         if (pointerLeft > mid)
@@ -17,11 +21,13 @@ long long Merge(vector<int> &nums, int left, int mid, int right)
             tempVector.push_back(nums[pointerRight++]);
             continue;
         }
+
         if (pointerRight > right)
         {
             tempVector.push_back(nums[pointerLeft++]);
             continue;
         }
+
         if (nums[pointerLeft] <= nums[pointerRight])
         {
             tempVector.push_back(nums[pointerLeft++]);
