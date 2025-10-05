@@ -7,17 +7,17 @@ AcWing算法基础课项目,所有题目均以c++实现内容正在逐步更新�
 
 ## review list
 
-- [ ] [788. 逆序对的数量](https://www.acwing.com/problem/content/790/)
+- [X] [788. 逆序对的数量](https://www.acwing.com/problem/content/790/)
   复习ans在什么条件下加多少，为什么当右边放完再放左边时及时左边比已经放了的右边所有值小此时ans不增？
-- [ ] [789. 数的范围](https://www.acwing.com/problem/content/description/791/)
+- [X] [789. 数的范围](https://www.acwing.com/problem/content/description/791/)
   复习FindLastLessOrEqualThan(),FindFirstMoreOrEqualThan()实现,哪里(left+right+1)哪里不用
 - [ ] [AcWing 800. 数组元素的目标和](https://www.acwing.com/problem/content/802/)
   进行该题双指针写法复习，看看如何利用数组单调性进行循环的优化
-- [ ] [AcWing 802. 区间和](https://www.acwing.com/problem/content/804/)
+- [X] [AcWing 802. 区间和](https://www.acwing.com/problem/content/804/)
   复习整数离散化
-- [ ] [3302. 表达式求值](https://www.acwing.com/problem/content/3305/)
-- [ ] [830. 单调栈](https://www.acwing.com/problem/content/832/)
-- [ ] [154. 滑动窗口](https://www.acwing.com/problem/content/156/)
+- [X] [3302. 表达式求值](https://www.acwing.com/problem/content/3305/)
+- [X] [830. 单调栈](https://www.acwing.com/problem/content/832/)
+- [X] [154. 滑动窗口](https://www.acwing.com/problem/content/156/)
 - [ ] [831. KMP字符串](https://www.acwing.com/problem/content/833/)
 - [ ] [143. 最大异或对](https://www.acwing.com/problem/content/145/)
   复习如何优化暴力内层循环，为何能使用Trie树进行优化
