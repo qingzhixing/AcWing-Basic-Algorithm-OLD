@@ -9,11 +9,15 @@ vector<int> positions;
 vector<pair<int, int>> add, query;
 int nums[MAX_N]; // 存储每个位置的值，值的下标为位置映射之后的值
 
-// 获取坐标经过映射之后的值
-// 也就是这个坐标在positions里的位置
+/*
+ * @brief 获取坐标经过映射之后的值,也就是这个坐标在positions里的位置.
+ *   由于positions里的元素是有序的，所以可以使用二分查找.
+ * @return position中第一个大于等于position的值的下标 (从1开始)
+ */
 int FindPositionAfterMap(int position)
 {
     int l = 0, r = positions.size() - 1;
+    // l == r 时停止查找
     while (l < r)
     {
         int mid = (l + r) >> 1;
@@ -23,7 +27,7 @@ int FindPositionAfterMap(int position)
         else
             l = mid + 1;
     }
-    // 将得到的坐标加1以至于所有坐标映射成1~positions.size()之间的值
+    // 将得到的坐标加1以至于所有坐标映射成 1 ~ positions.size() 之间的值
     // 便于前缀和使用
     return r + 1;
 }
@@ -47,8 +51,10 @@ int main()
         positions.push_back(r);
     }
     // 去重
-    sort(positions.begin(), positions.end());
-    positions.erase(unique(positions.begin(), positions.end()), positions.end());
+    sort(positions.begin(), positions.end()); // 此时positions里的元素是有序的
+    positions.erase(
+        unique(positions.begin(), positions.end()),
+        positions.end());
 
     for (auto item : add)
     {
