@@ -9,7 +9,8 @@ AcWing算法基础课项目,所有题目均以c++实现内容正在逐步更新�
 ## review list
 
 - [X] [788. 逆序对的数量](https://www.acwing.com/problem/content/790/)
-  复习ans在什么条件下加多少，为什么当右边放完再放左边时及时左边比已经放了的右边所有值小此时ans不增？
+  Q: ans在什么条件下加多少，为什么当右边放完再放左边时及时左边比已经放了的右边所有值小此时ans不增？
+  A: 因为当右侧还有数字时，放置它的情况下已经计数过一次了，后面再计数就会重复
 - [X] [789. 数的范围](https://www.acwing.com/problem/content/description/791/)
   复习FindLastLessOrEqualThan(),FindFirstMoreOrEqualThan()实现,哪里(left+right+1)哪里不用
 - [ ] [AcWing 800. 数组元素的目标和](https://www.acwing.com/problem/content/802/)
